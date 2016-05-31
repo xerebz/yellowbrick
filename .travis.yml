@@ -4,7 +4,7 @@ python:
   - '3.5'
 
 before_install:
-  - sudo apt-get install -qq libblas3gf
+  - sudo apt-get build-dep python-scipy
   - pip install coveralls
 
 install: pip install -r requirements.txt
