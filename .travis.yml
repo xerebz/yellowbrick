@@ -4,9 +4,9 @@ python:
   - '3.5'
 
 before_install:
-  - sudo apt-get build-dep python-scipy
+  - apt-get install -qq python-numpy python-scipy python-matplotlib
   - pip install coveralls
-  - pip install scipy
+  - export PATH=/usr/bin:$PATH
 
 install: pip install -r requirements.txt
 
